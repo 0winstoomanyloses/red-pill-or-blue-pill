@@ -1,0 +1,42 @@
+print("Welcome patient 777!")
+print("You are a lucky one considering you are being offered an opportunity of a lifetime!")
+print("This opportunity will allow you to choose between choosing a red pill or a blue pill!")
+print("The red pill allows you to see the truth outside of this stimulation, or stay in here and live a happy life not knowing the truth on the outside.")
+print("Now heres the big question which will you choose? The red pill or the blue pill?")
+
+
+pillChoice = input("> ")
+
+if(pillChoice == "red pill"):
+  print("You awake from the deep slumber.")
+  print("You get out and see the difference of the world you always known before and the world now")
+  print("You notice a strange device on the ground next to some unknown creature, blob,? something.")
+  print("Do you want to try to take the device from the unknown creature?")
+
+  UnknownChoice = input("> ")
+
+  if(UnknownChoice == "yes"):
+    print("You try to take the device but you wake the creature, causing it to devour you bit by bit.")
+    print("You are now dead.")
+  elif(UnknownChoice == "no"):
+    print("You decide to not try to take the device from the creature.")
+    print("You turn around and start to wander around this unknown place aimlessly, wondering what lies ahead for you in this new unknown world.")
+  else:
+    print("Invalid choice. Please enter yes or no.")
+elif(pillChoice == "blue pill"):
+  print("You decide to stay in this fantasy world.")
+  print("You turn around from the strange man, but before you leave out the door he asks you one more thing.")
+  print("Are you sure you want to stay in this wretched place?")
+
+  glassesChoice = input("> ")
+
+  if(glassesChoice == "yes"):
+    print("You confidently leave through the door and stay in the fantasy world and enjoy your life never knowing what truly lies out there with the question lingering in your head, what if you took the red pill.")
+  elif(glassesChoice == "no"):
+    print("You decide you actually wanted to take the red pill instead")
+    print("As you digest the pill you start waking up surrounded in a cave with the world looking as if it has been destroyed.")
+    print("You decide to get out of the machine and start wandering around aimlessly trying to find the true purpose of this life and figure out whether it was truly better staying in the fantasy world or leaving it.")
+  else:
+    print("Invalid choice. Please enter yes or no.")
+else:
+  print("Invalid choice. Please choose red pill or blue pill.")
